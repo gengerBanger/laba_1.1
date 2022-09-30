@@ -49,7 +49,7 @@ int main()
         {
             for (int i = 0; i < sizeof(float) * 8; i++)
             {
-                if (i == 1 || i % 8 == 0 && i != 0)
+                if (i == 1 || i == 9)
                 {
                     putchar(' ');
                 }
@@ -85,7 +85,7 @@ int main()
             {
                 for (int i = 0; i < sizeof(float) * 8; i++)
                 {
-                    if ((i == 1 && j == 1) || i % 8 == 0 && i != 0)
+                    if ((i == 1 && j == 1) || (i == 12 && j == 1))
                     {
                         putchar(' ');
                     }
@@ -93,7 +93,6 @@ int main()
                     mask = 1 << (sizeof(float) * 16 - count);
                     count++;
                 }
-                cout << ' ';
             }
             cout << endl;
         }
